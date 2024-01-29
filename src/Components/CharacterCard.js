@@ -1,5 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+import './CharacterCard.css';
+
 export default function CharacterCard(props)
 {
+    const navigate = useNavigate();
+
     const iconElements = [];
 
     for (const image in props.icon) {
@@ -10,7 +15,7 @@ export default function CharacterCard(props)
     }
 
     return (
-        <div className="CharacterCardBody">
+        <div className="CharacterCardBody" onClick={() => navigate("/bio/" + props.name)}>
             <img className="CharacterCardImg" src={props.image}/>
 
             <div className="CharacterCardGlow"

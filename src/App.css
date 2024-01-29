@@ -1,99 +1,12 @@
-.App {
+.Background {
   position: absolute;
   display: flex;
   height: 100%;
   width: 100%;
   text-align: center;
   background-image:url(https://www.wallpaperup.com/uploads/wallpapers/2018/01/18/1191900/e4460f71ab237e4f9be9d0dbcc8e47b3.jpg);
+  filter:blur(4px);
 }
 
-.Center {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin: auto;
-  height: calc(100vh - 80px);
-  width: 60%;
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,0) 100%);
-  flex-wrap: wrap;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-  padding-top: 80px;
-}
 
-.Center::-webkit-scrollbar {
-  display: none;
-}
 
-.CharacterCardBody {
-  width: 360px;
-  height: 360px;
-  background-color: gray;
-  margin: 20px;
-  border-radius: 15px;
-
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
-}
-
-.CharacterCardBody:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-.CharacterCardImg {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-.IconContainer {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 5px;
-  top: 5px;
-  width: 45px;
-}
-
-.CharacterCardIcon {
-  width: 100%;
-  padding: 10px;
-  background: radial-gradient(circle closest-side, #000000FF, #000000AA 60%, #00000000);
-}
-
-.CharacterCardLabel {
-  position: relative;
-  top: -84px;
-  width: 100%;
-  height: 35px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
-  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%);
-  padding-top: 45px;
-  border-radius: 15px;
-}
-
-.CharacterCardGlow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  opacity: 0%;
-  border-radius: 15px;
-
-  transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.CharacterCardGlow:hover {
-  opacity: 30%;
-
-  transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
