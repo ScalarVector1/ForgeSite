@@ -12,8 +12,9 @@ export default function GalleryImage(props) {
                 style={{filter: censored ? "blur(20px)" : ""}} 
                 src={props.src}
                 onClick={() => setCensored(false)}/>
-                
-            <div className="Warning">
+
+            <div className="Warning"
+                onClick={() => setCensored(false)}>
                 {censored ? "Hidden" : ""}
             </div>
         </div>
