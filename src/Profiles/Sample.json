@@ -12,11 +12,7 @@
     "Cards":[
         {
             "Title": "What is this?",
-            "Body": "This is a default profile I have set up for if something goes wrong. If you got here through normal means, I would appreciate you telling me about it over at https://github.com/ScalarVector1/ForgeSite/issues"
-        },
-        {
-            "Title": "What can I do?",
-            "Body": "Not much. Your best bet is to <a href='/'>head back where you came from</a> and try again."
+            "Body": "../../markdown/error.md"
         }
     ]
 }
