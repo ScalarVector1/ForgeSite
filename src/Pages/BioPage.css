@@ -29,6 +29,14 @@
     white-space:nowrap;
 }
 
+.BackButton {
+    position: absolute;
+    top: 40px;
+    right: calc(10% + 40px);
+    width: 60px;
+    height: 60px;
+}
+
 .TopImage {
     position: absolute;
     top: 10px;

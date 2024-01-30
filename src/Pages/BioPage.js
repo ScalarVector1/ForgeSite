@@ -2,11 +2,13 @@ import InfoTag from "../Components/InfoTag";
 import "./BioPage.css";
 import BioCard from "../Components/BioCard";
 import GalleryCard from "../Components/GalleryCard";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { GoArrowLeft } from "react-icons/go";
 
 export default function BioPage(props) {
 
     const {key} = useParams();
+    const navigate = useNavigate();
 
     var profile;
     try{
@@ -33,10 +35,11 @@ export default function BioPage(props) {
 
                 <img className="TopImage" src={profile.MainImage}/>
 
-                <div className="TopBanner">
-                    
+                <div className="TopBanner">                   
                     <h1 className="TopName">{profile.Name}</h1>
                 </div>
+
+                <GoArrowLeft className="BackButton" onClick={() => navigate("/")}/>
 
                 <div className="Tagbox">
                     {tags}
