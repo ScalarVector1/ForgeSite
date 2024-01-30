@@ -1,0 +1,18 @@
+{
+    "Name": "Unknown page",
+    "MainImage": "../../images/Backdrop.jpg",
+
+    "Tags":[
+        {
+            "Image": "../../images/AshLegion.png",
+            "Text": "Uh oh!"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "What is this?",
+            "Body": "../../markdown/error.md"
+        }
+    ]
+}
