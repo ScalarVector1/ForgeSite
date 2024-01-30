@@ -1,9 +1,11 @@
 .Topbar {
     position: absolute;
+    top: 40px;
     color: white;
     width: calc(100vw - 80px);
     padding: 20px;
     margin: 20px;
+    height: 300px;
 
     overflow-x: scroll;
     -ms-overflow-style: none;
@@ -29,12 +31,30 @@
     white-space:nowrap;
 }
 
-.BackButton {
+.Buttons {
     position: absolute;
-    top: 40px;
-    right: calc(10% + 40px);
-    width: 60px;
-    height: 60px;
+    display: flex;
+    left: 20px;
+    margin: 20px;
+    height: 40px;
+}
+
+.Button {
+    display: flex;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+
+    background-color: #00000088;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 .TopImage {
@@ -47,18 +67,19 @@
 }
 
 .Tagbox {
+    position: absolute;
     display: flex;
-    top: 160px;
-    margin-left: 220px;
+    top: 130px;
+    margin-left: 210px;
     width: calc(100vw - 220px);
 }
 
 .Scroller {
     position: absolute;
-    top: 250px;
+    top: 280px;
     overflow-y: scroll;
     width: 100%;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 280px);
     -ms-overflow-style: none;
     scrollbar-width: none; 
 }

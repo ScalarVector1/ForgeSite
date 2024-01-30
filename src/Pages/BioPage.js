@@ -31,6 +31,13 @@ export default function BioPage(props) {
 
     return (
         <>
+            <div className="Buttons">
+                <div className="Button" onClick={() => navigate("/")}>
+                    <GoArrowLeft style={{display:"block", width: "30px", height: "40px"}}/>
+                    Back to roster
+                </div>
+            </div>
+
             <div className="Topbar">
 
                 <img className="TopImage" src={profile.MainImage}/>
@@ -38,8 +45,6 @@ export default function BioPage(props) {
                 <div className="TopBanner">                   
                     <h1 className="TopName">{profile.Name}</h1>
                 </div>
-
-                <GoArrowLeft className="BackButton" onClick={() => navigate("/")}/>
 
                 <div className="Tagbox">
                     {tags}
