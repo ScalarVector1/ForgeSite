@@ -2,34 +2,51 @@ import InfoTag from "../Components/InfoTag";
 import "./BioPage.css";
 import BioCard from "../Components/BioCard";
 import GalleryCard from "../Components/GalleryCard";
+import { useParams } from "react-router-dom";
 
 export default function BioPage(props) {
 
+    const {key} = useParams();
+
+    var profile;
+    try{
+        profile = require(`../Profiles/${key}.json`);
+    } catch{
+        profile = require(`../Profiles/sample.json`);
+    }
+
     const tags = [];
-    for(const index in props.profile.Tags) {
-        const tag = props.profile.Tags[index];
+    for(const index in profile.Tags) {
+        const tag = profile.Tags[index];
         tags.push(<InfoTag icon={tag.Image} text={tag.Text}/>)
     }
 
     const cards = [];
-    for(const index in props.profile.Cards) {
-        const card = props.profile.Cards[index];
+    for(const index in profile.Cards) {
+        const card = profile.Cards[index];
         cards.push(<BioCard title={card.Title} body={card.Body}/>)
     }
 
     return (
         <>
             <div className="Topbar">
-                <img className="TopImage" src={props.profile.MainImage}/>
-                <h1 className="TopName">{props.profile.Name}</h1>
+
+                <img className="TopImage" src={profile.MainImage}/>
+
+                <div className="TopBanner">
+                    
+                    <h1 className="TopName">{profile.Name}</h1>
+                </div>
+
                 <div className="Tagbox">
                     {tags}
                 </div>
+
             </div>
 
             <div className="Scroller">
                 {cards}
-                <GalleryCard images={props.profile.Gallery}/>
+                {profile.Gallery ? <GalleryCard images={profile.Gallery}/> : <></>}
             </div>
         </>
     );

@@ -1,37 +1,22 @@
 {
-    "Name": "Test profile",
-    "MainImage": "../../images/Sura.png",
+    "Name": "Unknown page",
+    "MainImage": "../../images/Backdrop.jpg",
 
     "Tags":[
         {
-            "Image": "../../images/Firebrand.png",
-            "Text": "Test tag"
+            "Image": "../../images/AshLegion.png",
+            "Text": "Uh oh!"
         }
     ],
 
     "Cards":[
         {
-            "Title": "Test card",
-            "Body": "This is the body of a test card weee"
+            "Title": "What is this?",
+            "Body": "This is a default profile I have set up for if something goes wrong. If you got here through normal means, I would appreciate you telling me about it over at https://github.com/ScalarVector1/ForgeSite/issues"
         },
         {
-            "Title": "Test card 2",
-            "Body": "This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. "
-        }
-    ],
-
-    "Gallery":[
-        {
-            "Image": "../../images/Sura.png",
-            "Censored": false
-        },
-        {
-            "Image": "../../images/Sura.png",
-            "Censored": false
-        },
-        {
-            "Image": "../../images/Sura.png",
-            "Censored": true
+            "Title": "What can I do?",
+            "Body": "Not much. Your best bet is to <a href='/'>head back where you came from</a> and try again."
         }
     ]
 }

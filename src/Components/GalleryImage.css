@@ -2,7 +2,9 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    max-width: 20%;
+    max-width: 100%;
+    min-width: 20%;
+    width: 300px;
     margin: 20px;
 
     transform: translate(0px, 0px) scale(1);

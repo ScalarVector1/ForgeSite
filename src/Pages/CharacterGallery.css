@@ -1,16 +1,20 @@
 .Center {
     display: flex;
     align-self: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: auto;
-    height: calc(100vh - 80px);
+    top: 40px;
     width: 60%;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,0) 100%);
+    min-width: 400px;
+    height: calc(100vh - 160px);
+    background-color: #00000088;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+
     flex-wrap: wrap;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
-    padding-top: 80px;
   }
   
   .Center::-webkit-scrollbar {

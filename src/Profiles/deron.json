@@ -1,0 +1,37 @@
+{
+    "Name": "Deron Forgetender",
+    "MainImage": "../../images/Deron.png",
+
+    "Tags":[
+        {
+            "Image": "../../images/Holosmith.png",
+            "Text": "Holosmith"
+        },
+        {
+            "Image": "../../images/AshLegion.png",
+            "Text": "Ash Legion"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "Appearance",
+            "Body": "This is the body of a test card weee"
+        },
+        {
+            "Title": "Personality",
+            "Body": "This is the body of a test card weee"
+        },
+        {
+            "Title": "History",
+            "Body": "This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. "
+        }
+    ],
+
+    "Gallery":[
+        {
+            "Image": "../../images/Deron.png",
+            "Censored": false
+        }
+    ]
+}

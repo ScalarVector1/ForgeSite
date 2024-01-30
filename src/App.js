@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CharacterGallery from "./Pages/CharacterGallery";
 import BioPage from "./Pages/BioPage";
-import sampleProfile from "./Profiles/Sample.json"
 
 export default function App() {
   return (
@@ -11,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CharacterGallery />}/>
-          <Route path="/bio/sample" element={<BioPage profile={sampleProfile}/>}/>
+          <Route path="/bio/:key" element={<BioPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

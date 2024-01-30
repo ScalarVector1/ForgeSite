@@ -6,7 +6,7 @@ export default function BioCard(props) {
         <div className="Card">
             <h1 className="Title">{props.title}</h1>
             <div className="Seperator"/>
-            <p className="Text">{props.body}</p>
+            <div className="Text" dangerouslySetInnerHTML={{__html: props.body}}/>
         </div>
     );
 }

@@ -9,6 +9,7 @@
     font-weight: 600;
     font-size: large;
     backdrop-filter: blur(10px);
+    white-space:nowrap;
 }
 
 .TagImg {
