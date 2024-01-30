@@ -8,10 +8,37 @@ import Holosmith from '../assets/Holosmith.png';
 import Daredevil from '../assets/Daredevil.png';
 import Spellbreaker from '../assets/Spellbreaker.png';
 import AshLegion from '../assets/AshLegion.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function CharacterGallery() {
+
+  const navigate = useNavigate();
+
   return (
-    <div style={{width: "100%", height: "100%", display: "flex", position: "absolute"}}>
+    <div>
+
+      <div className="GalleryButtons">
+
+        <div className="GalleryButton" onClick={() => navigate("/about")}>
+          About  
+        </div>
+
+        <div className="GalleryButton" onClick={() => navigate("/faq")}>
+          FAQ  
+        </div>
+
+        <div className="GalleryButton" onClick={() => navigate("/contact")}>
+          Contact  
+        </div>
+
+        <a href={"https://github.com/ScalarVector1/ForgeSite"}>
+          <div className="GalleryButton">
+            Source  
+          </div>
+        </a>
+        
+      </div>
+
       <div className="Center">
         <CharacterCard 
           image={"../../images/Sura.png"} 

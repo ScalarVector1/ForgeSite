@@ -1,10 +1,11 @@
 .Center {
+    position: absolute;
     display: flex;
-    align-self: center;
     justify-content: space-evenly;
-    margin: auto;
-    top: 40px;
-    width: 60%;
+
+    top: 80px;
+    left: calc(50vw - max(30vw, 200px));
+    max-width: 60%;
     min-width: 400px;
     height: calc(100vh - 160px);
     background-color: #00000088;
@@ -20,3 +21,47 @@
   .Center::-webkit-scrollbar {
     display: none;
   }
+
+  .GalleryButtons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50vw - max(30vw, 200px));
+    max-width: 60%;
+    min-width: 400px;
+    width: 100%;
+    margin-top: 10px;
+    height: 60px;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+
+.GalleryButton {
+    display: flex;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: #00000088;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.GalleryButton:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
