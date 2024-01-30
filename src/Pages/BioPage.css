@@ -55,6 +55,14 @@
     background-color: #00000088;
     border-radius: 15px;
     backdrop-filter: blur(10px);
+
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.Button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
 }
 
 .TopImage {
