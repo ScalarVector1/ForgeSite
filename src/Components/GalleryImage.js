@@ -3,7 +3,7 @@ import "./GalleryImage.css";
 
 export default function GalleryImage(props) {
 
-    const [censored, setCensored] = useState(true);
+    const [censored, setCensored] = useState(props.censored);
 
     return (
         <div className="Container">

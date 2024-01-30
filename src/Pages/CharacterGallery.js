@@ -9,32 +9,27 @@ import Daredevil from '../assets/Daredevil.png';
 import Spellbreaker from '../assets/Spellbreaker.png';
 import AshLegion from '../assets/AshLegion.png';
 
-import Sura from '../assets/Sura.png';
-import Deron from '../assets/Deron.png';
-import Trinik from '../assets/Trinik.png';
-import Gorrin from '../assets/Gorrin.png';
-
 export default function CharacterGallery() {
   return (
     <div style={{width: "100%", height: "100%", display: "flex", position: "absolute"}}>
       <div className="Center">
         <CharacterCard 
-          image={Sura} 
-          icon={[Firebrand, AshLegion]}
+          image={"../../images/Sura.png"} 
+          icon={["../../images/Firebrand.png", "../../images/AshLegion.png"]}
           name={"Sura Forgesmasher"}
           glow={"#55AAFF"}/>
         <CharacterCard          
-          image={Deron} 
+          image={"../../images/Deron.png"} 
           icon={[Holosmith, AshLegion]}
           name={"Deron Forgetender"}
           glow={"#FF7711"}/>
         <CharacterCard
-          image={Trinik} 
+          image={"../../images/Trinik.png"} 
           icon={[Daredevil, AshLegion]}
           name={"Trinik Forgekeeper"}
           glow={"#880044"}/>
         <CharacterCard          
-          image={Gorrin} 
+          image={"../../images/Gorrin.png"} 
           icon={[Spellbreaker, AshLegion]}
           name={"Gorrin Forgerend"}
           glow={"#FFAA33"}/>

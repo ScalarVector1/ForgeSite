@@ -1,0 +1,28 @@
+{
+    "Name": "Test profile",
+
+    "Tags":[
+        {
+            "Image": "../../images/Firebrand.png",
+            "Text": "Test tag"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "Test card",
+            "Body": "This is the body of a test card weee"
+        },
+        {
+            "Title": "Test card 2",
+            "Body": "This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way."
+        }
+    ],
+
+    "Gallery":[
+        {
+            "Image": "../../images/Sura.png",
+            "Censored": false
+        }
+    ]
+}

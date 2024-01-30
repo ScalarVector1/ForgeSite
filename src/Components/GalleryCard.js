@@ -8,7 +8,8 @@ export default function GalleryCard(props) {
     for (const image in props.images) {
         images.push(
             <GalleryImage 
-                src={props.images[image]}
+                censored={props.images[image].Censored}
+                src={props.images[image].Image}
                 />
             )
     }
