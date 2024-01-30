@@ -18,13 +18,13 @@ export default function BioPage(props) {
     const tags = [];
     for(const index in profile.Tags) {
         const tag = profile.Tags[index];
-        tags.push(<InfoTag icon={tag.Image} text={tag.Text}/>)
+        tags.push(<InfoTag icon={tag.Image} text={tag.Text} key={index}/>)
     }
 
     const cards = [];
     for(const index in profile.Cards) {
         const card = profile.Cards[index];
-        cards.push(<BioCard title={card.Title} body={card.Body}/>)
+        cards.push(<BioCard title={card.Title} body={card.Body} index={index} key={index}/>)
     }
 
     return (
