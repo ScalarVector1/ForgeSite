@@ -1,7 +1,6 @@
 .Center {
     position: absolute;
-    display: flex;
-    justify-content: space-evenly;
+
 
     top: 80px;
     left: calc(50vw - max(30vw, 200px));
@@ -12,13 +11,21 @@
     backdrop-filter: blur(10px);
     border-radius: 15px;
 
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
+
   }
   
-  .Center::-webkit-scrollbar {
+.Inner {
+  display: flex;
+  height: calc(100vh - 240px);
+  margin: 40px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+  .Inner::-webkit-scrollbar {
     display: none;
   }
 

@@ -40,6 +40,7 @@ export default function CharacterGallery() {
       </div>
 
       <div className="Center">
+        <div className="Inner">
         <CharacterCard 
           image={"../../images/Sura.png"} 
           icon={["../../images/Firebrand.png", "../../images/AshLegion.png"]}
@@ -65,6 +66,7 @@ export default function CharacterGallery() {
           glow={"#FFAA33"}
           path={"gorrin"}/>
         </div>
+      </div>
       </div>
   );
 }
