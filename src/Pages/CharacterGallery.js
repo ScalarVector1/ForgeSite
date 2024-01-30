@@ -1,13 +1,6 @@
 import './CharacterGallery.css';
-
 import '../App.css';
 import CharacterCard from '../Components/CharacterCard';
-
-import Firebrand from '../assets/Firebrand.png';
-import Holosmith from '../assets/Holosmith.png';
-import Daredevil from '../assets/Daredevil.png';
-import Spellbreaker from '../assets/Spellbreaker.png';
-import AshLegion from '../assets/AshLegion.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function CharacterGallery() {
@@ -49,19 +42,19 @@ export default function CharacterGallery() {
           path={"sura"}/>
         <CharacterCard          
           image={"../../images/Deron.png"} 
-          icon={[Holosmith, AshLegion]}
+          icon={[ "../../images/Holosmith.png",  "../../images/AshLegion.png"]}
           name={"Deron Forgetender"}
           glow={"#FF7711"}
           path={"deron"}/>
         <CharacterCard
           image={"../../images/Trinik.png"} 
-          icon={[Daredevil, AshLegion]}
+          icon={[ "../../images/Daredevil.png",  "../../images/AshLegion.png"]}
           name={"Trinik Forgekeeper"}
           glow={"#880044"}
           path={"trinik"}/>
         <CharacterCard          
           image={"../../images/Gorrin.png"} 
-          icon={[Spellbreaker, AshLegion]}
+          icon={[ "../../images/Spellbreaker.png",  "../../images/AshLegion.png"]}
           name={"Gorrin Forgerend"}
           glow={"#FFAA33"}
           path={"gorrin"}/>

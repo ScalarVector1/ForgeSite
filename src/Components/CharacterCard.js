@@ -11,12 +11,13 @@ export default function CharacterCard(props)
         iconElements.push(
         <img 
             className="CharacterCardIcon" 
-            src={props.icon[image]}/>);
+            src={props.icon[image]}
+            alt="Character Icon"/>);
     }
 
     return (
         <div className="CharacterCardBody" onClick={() => navigate(`/bio/${props.path}`)}>
-            <img className="CharacterCardImg" src={props.image}/>
+            <img className="CharacterCardImg" src={props.image} alt="Character Preview"/>
 
             <div className="CharacterCardGlow"
                 style={{

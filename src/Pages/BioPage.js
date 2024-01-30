@@ -40,7 +40,7 @@ export default function BioPage(props) {
 
             <div className="Topbar">
 
-                <img className="TopImage" src={profile.MainImage}/>
+                <img className="TopImage" src={profile.MainImage} alt="Profile"/>
 
                 <div className="TopBanner">                   
                     <h1 className="TopName">{profile.Name}</h1>

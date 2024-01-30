@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { SlArrowDown, SlArrowRight } from "react-icons/sl";
+import { SlArrowDown } from "react-icons/sl";
 import "./BioCard.css";
 import Markdown from "react-markdown";
 
@@ -26,7 +26,7 @@ export default function BioCard(props) {
         <div className="Card">
             <h1 className="Title">{props.title}</h1>
 
-            <SlArrowDown className="Arrow" expanded={expanded} onClick={() => setExpanded(expanded == "true" ? "false" : "true")}/>
+            <SlArrowDown className="Arrow" expanded={expanded} onClick={() => setExpanded(expanded === "true" ? "false" : "true")}/>
 
             <div className="Seperator"/>
             <div className="Text" ref={text} expanded={expanded}>
