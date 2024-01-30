@@ -1,5 +1,6 @@
 {
     "Name": "Test profile",
+    "MainImage": "../../images/Sura.png",
 
     "Tags":[
         {
@@ -15,7 +16,7 @@
         },
         {
             "Title": "Test card 2",
-            "Body": "This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way."
+            "Body": "This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. This is the body of another test card. This one is a bit longer to make sure text is wrapping in a pretty way. "
         }
     ],
 
@@ -23,6 +24,14 @@
         {
             "Image": "../../images/Sura.png",
             "Censored": false
+        },
+        {
+            "Image": "../../images/Sura.png",
+            "Censored": false
+        },
+        {
+            "Image": "../../images/Sura.png",
+            "Censored": true
         }
     ]
 }

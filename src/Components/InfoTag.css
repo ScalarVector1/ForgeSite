@@ -1,6 +1,6 @@
 .InfoTag {
     display: flex;
-    background-color: #000000AA;
+    background-color: #00000088;
     border-radius: 5px;
     height: 60px;
     flex-direction: row;
@@ -8,6 +8,7 @@
     padding-right: 20px;
     font-weight: 600;
     font-size: large;
+    backdrop-filter: blur(10px);
 }
 
 .TagImg {

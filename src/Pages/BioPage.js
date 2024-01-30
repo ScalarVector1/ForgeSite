@@ -20,7 +20,8 @@ export default function BioPage(props) {
     return (
         <>
             <div className="Topbar">
-                <h1>{props.profile.Name}</h1>
+                <img className="TopImage" src={props.profile.MainImage}/>
+                <h1 className="TopName">{props.profile.Name}</h1>
                 <div className="Tagbox">
                     {tags}
                 </div>

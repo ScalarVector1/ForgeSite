@@ -48,6 +48,7 @@
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%);
     padding-top: 45px;
     border-radius: 15px;
+    text-align: center;
   }
   
   .CharacterCardGlow {
@@ -63,7 +64,7 @@
     -webkit-transition: opacity .2s ease-in-out;
   }
   
-  .CharacterCardGlow:hover {
+  .CharacterCardBody:hover .CharacterCardGlow {
     opacity: 30%;
   
     transition: opacity .2s ease-in-out;

@@ -15,7 +15,7 @@ export default function CharacterCard(props)
     }
 
     return (
-        <div className="CharacterCardBody" onClick={() => navigate("/bio/" + props.name)}>
+        <div className="CharacterCardBody" onClick={() => navigate("/bio/sample")}>
             <img className="CharacterCardImg" src={props.image}/>
 
             <div className="CharacterCardGlow"

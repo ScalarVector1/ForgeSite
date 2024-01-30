@@ -4,8 +4,8 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  background-image:url(https://www.wallpaperup.com/uploads/wallpapers/2018/01/18/1191900/e4460f71ab237e4f9be9d0dbcc8e47b3.jpg);
-  filter:blur(4px);
+  background-image:url(../public/images/Backdrop.jpg);
+  background-size: cover;
 }
 
 

@@ -5,7 +5,8 @@
     color: white;
     padding: 20px;
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
 }
 
 .Seperator {

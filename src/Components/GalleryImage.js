@@ -15,7 +15,7 @@ export default function GalleryImage(props) {
 
             <div className="Warning"
                 onClick={() => setCensored(false)}>
-                {censored ? "Hidden" : ""}
+                {censored ? "18+" : ""}
             </div>
         </div>
     )
