@@ -19,8 +19,9 @@ export default function BioCard(props) {
             );
     });
 
-    text.current?.style.setProperty('--max-height', text.current?.scrollHeight + 'px');
-    console.log(text.current)
+    useEffect(() => {
+        text.current?.style.setProperty('--max-height', text.current?.scrollHeight + 'px');
+    }, [body, text])
 
     return (
         <div className="Card">
