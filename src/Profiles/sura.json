@@ -17,6 +17,18 @@
         {
             "Title": "Appearance",
             "Body": "../../markdown/suraAppearance.md"
+        },
+        {
+            "Title": "Personality",
+            "Body": "../../markdown/suraPersonality.md"
+        },
+        {
+            "Title": "History",
+            "Body": "../../markdown/suraHistory.md"
+        },
+        {
+            "Title": "Other traits",
+            "Body": "../../markdown/suraOther.md"
         }
     ],
 
