@@ -7,21 +7,21 @@ export default function CharacterCard(props)
 
     const iconElements = [];
 
-    for (const image in props.icon) {
+    for (const image in props.profile.Tags) {
         iconElements.push(
         <img 
             className="CharacterCardIcon" 
-            src={props.icon[image]}
+            src={props.profile.Tags[image].Image}
             alt="Character Icon"/>);
     }
 
     return (
         <div className="CharacterCardBody" onClick={() => navigate(`/bio/${props.path}`)}>
-            <img className="CharacterCardImg" src={props.image} alt="Character Preview"/>
+            <img className="CharacterCardImg" src={props.profile.MainImage} alt="Character Preview"/>
 
             <div className="CharacterCardGlow"
                 style={{
-                    background: `radial-gradient(circle at center, #00000000, #00000000 50%, ${props.glow})`
+                    background: `radial-gradient(circle at center, #00000000, #00000000 50%, ${props.profile.Color})`
                 }}/>
 
             <div className="IconContainer">
@@ -29,7 +29,7 @@ export default function CharacterCard(props)
             </div>
           
             <div className="CharacterCardLabel">
-                {props.name}
+                {props.profile.Name}
             </div>
 
         </div>

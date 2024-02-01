@@ -6,6 +6,26 @@ import { useNavigate } from 'react-router-dom';
 export default function CharacterGallery() {
 
   const navigate = useNavigate();
+  
+  // Builds out a set of profile cards based on the profile JSON files present
+  const r = require.context('../Profiles/', false, /\.(json)$/);
+  const profileKeys = r.keys();
+  const profiles = profileKeys.map(r)
+  const cards = [];
+
+  for (const index in profiles) {
+    const profile = profiles[index];
+    const key = profileKeys[index].match(/\/([^\/]+)\.[^.]+$/)[1];
+
+    // We explicitly dont create one for the error page
+    if (key === "sample"){
+      continue;
+    }
+
+    cards.push(
+      <CharacterCard profile={profile} path={key}/>
+    );
+  }
 
   return (
     <div>
@@ -34,30 +54,7 @@ export default function CharacterGallery() {
 
       <div className="Center">
         <div className="Inner">
-        <CharacterCard 
-          image={"../../images/Sura.png"} 
-          icon={["../../images/Firebrand.png", "../../images/AshLegion.png"]}
-          name={"Sura Forgesmasher"}
-          glow={"#55AAFF"}
-          path={"sura"}/>
-        <CharacterCard          
-          image={"../../images/Deron.png"} 
-          icon={[ "../../images/Holosmith.png",  "../../images/AshLegion.png"]}
-          name={"Deron Forgetender"}
-          glow={"#FF7711"}
-          path={"deron"}/>
-        <CharacterCard
-          image={"../../images/Trinik.png"} 
-          icon={[ "../../images/Daredevil.png",  "../../images/AshLegion.png"]}
-          name={"Trinik Forgekeeper"}
-          glow={"#880044"}
-          path={"trinik"}/>
-        <CharacterCard          
-          image={"../../images/Gorrin.png"} 
-          icon={[ "../../images/Spellbreaker.png",  "../../images/AshLegion.png"]}
-          name={"Gorrin Forgerend"}
-          glow={"#FFAA33"}
-          path={"gorrin"}/>
+          {cards}
         </div>
       </div>
       </div>
