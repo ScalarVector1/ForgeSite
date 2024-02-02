@@ -7,5 +7,25 @@
   background-size: cover;
 }
 
+ /* unvisited link */
+ a:link {
+  color: #88BBFF;
+}
+
+/* visited link */
+a:visited {
+  color: #BB88FF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #AADDFF;
+}
+
+/* selected link */
+a:active {
+  color: #FFFFFF;
+} 
+
 
 
