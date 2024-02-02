@@ -15,7 +15,7 @@ export default function CharacterGallery() {
 
   for (const index in profiles) {
     const profile = profiles[index];
-    const key = profileKeys[index].match(/\/([^\/]+)\.[^.]+$/)[1];
+    const key = profileKeys[index].match(/\/([^/]+)\.[^.]+$/)[1];
 
     // We explicitly dont create one for the error page
     if (key === "sample"){
