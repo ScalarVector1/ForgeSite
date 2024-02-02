@@ -8,6 +8,12 @@ export default function CharacterCard(props)
     const iconElements = [];
 
     for (const image in props.profile.Tags) {
+
+        // Limit cards to the first 4 tags
+        if (image >= 4) {
+            break;
+        }
+
         iconElements.push(
         <img 
             className="CharacterCardIcon" 

@@ -1,0 +1,58 @@
+{
+    "Name": "Test profile",
+    "MainImage": "../../images/Backdrop.jpg",
+    "Color": "#FFFFFF",
+
+    "Tags":[
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/AshLegion.png",
+            "Text": "Ash Legion"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "Appearance",
+            "Body": "../../markdown/error.md"
+        }
+    ],
+
+    "Gallery":[
+        {
+            "Image": "../../images/Firebrand.png",
+            "Censored": false
+        },
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Censored": true
+        },
+        {
+            "Image": "../../images/Holosmith.png",
+            "Censored": false
+        },
+        {
+            "Image": "../../images/Daredevil.png",
+            "Censored": false
+        }
+    ]
+}
