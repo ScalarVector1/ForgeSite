@@ -35,11 +35,7 @@ export default function CharacterGallery() {
         <div className="GalleryButton" onClick={() => navigate("/about")}>
           About  
         </div>
-
-        <div className="GalleryButton" onClick={() => navigate("/faq")}>
-          FAQ  
-        </div>
-
+        
         <div className="GalleryButton" onClick={() => navigate("/contact")}>
           Contact  
         </div>
