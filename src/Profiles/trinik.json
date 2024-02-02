@@ -1,0 +1,30 @@
+{
+    "Name": "Trinik Forgekeeper",
+    "MainImage": "../../images/Trinik.png",
+    "Color": "#880044",
+
+    "Tags":[
+        {
+            "Image": "../../images/Daredevil.png",
+            "Text": "Daredevil"
+        },
+        {
+            "Image": "../../images/AshLegion.png",
+            "Text": "Ash Legion"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "Appearance",
+            "Body": "../../markdown/suraAppearance.md"
+        }
+    ],
+
+    "Gallery":[
+        {
+            "Image": "../../images/Trinik.png",
+            "Censored": false
+        }
+    ]
+}

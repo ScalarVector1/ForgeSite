@@ -1,0 +1,30 @@
+{
+    "Name": "Gorrin Forgerend",
+    "MainImage": "../../images/Gorrin.png",
+    "Color": "#FFAA33",
+
+    "Tags":[
+        {
+            "Image": "../../images/Spellbreaker.png",
+            "Text": "Spellbreaker"
+        },
+        {
+            "Image": "../../images/AshLegion.png",
+            "Text": "Ash Legion"
+        }
+    ],
+
+    "Cards":[
+        {
+            "Title": "Appearance",
+            "Body": "../../markdown/suraAppearance.md"
+        }
+    ],
+
+    "Gallery":[
+        {
+            "Image": "../../images/Gorrin.png",
+            "Censored": false
+        }
+    ]
+}
