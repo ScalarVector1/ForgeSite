@@ -17,3 +17,20 @@
     height: 40px;
     margin: 10px;
 }
+
+@media (max-width: 600px) {
+
+    .InfoTag {
+        display: flex;
+        background-color: #00000088;
+        border-radius: 5px;
+        height: 60px;
+        width: 40px;
+        flex-direction: row;
+        margin: 10px;
+        padding-right: 20px;
+        font-size: 0px;
+        backdrop-filter: blur(10px);
+        white-space:nowrap;
+    }
+}

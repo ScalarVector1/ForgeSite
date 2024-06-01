@@ -2,11 +2,10 @@
 @media (min-width: 600px) {
     .Topbar {
         position: absolute;
-        top: 40px;
         color: white;
         width: calc(100vw - 80px);
         padding: 20px;
-        margin: 20px;
+        margin: 0px 20px 20px 20px;
         height: 300px;
 
         overflow-x: scroll;
@@ -39,15 +38,19 @@
         width: 200px;
         height: 200px;
         border-radius: 15px;
-        box-shadow: 0px 0px 6px #DDBB88;
+    }
+
+    .CardBox {
+        position: absolute;
+        top: 220px;
     }
 
     .Scroller {
         position: absolute;
-        top: 280px;
+        top: 80px;
         overflow-y: scroll;
         width: 100%;
-        height: calc(100vh - 280px);
+        height: calc(100vh - 80px);
         -ms-overflow-style: none;
         scrollbar-width: none; 
     }
@@ -76,12 +79,11 @@
 @media (max-width: 600px) {
     .Topbar {
         position: absolute;
-        top: 40px;
+        top: 0px;
         color: white;
         width: calc(100vw - 20px);
         padding: 10px;
-        margin-top: 10px;
-        height: 50px;
+        height: 200px;
 
         overflow-x: scroll;
         -ms-overflow-style: none;
@@ -94,7 +96,7 @@
 
     .TopBanner {
         width: calc(100vw - 20px);
-        height: 50px;
+        height: 60px;
         
         background-color: #00000088;
         border-radius: 15px;
@@ -112,12 +114,17 @@
         display: none;
     }
 
+    .CardBox {
+        position: absolute;
+        top: 150px;
+    }
+
     .Scroller {
         position: absolute;
-        top: 120px;
+        top: 60px;
         overflow-y: scroll;
         width: 100%;
-        height: calc(100vh - 120px);
+        height: calc(100vh - 60px);
         -ms-overflow-style: none;
         scrollbar-width: none; 
     }
@@ -127,7 +134,10 @@
     }
 
     .Tagbox {
-        display: none;
+        position: absolute;
+        display: flex;
+        top: 70px;
+        width: calc(100vw);
     }
 
     .Buttons {

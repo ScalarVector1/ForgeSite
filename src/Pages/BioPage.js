@@ -38,23 +38,25 @@ export default function BioPage(props) {
                 </div>
             </div>
 
-            <div className="Topbar">
-
-                <img className="TopImage" src={profile.MainImage} alt="Profile"/>
-
-                <div className="TopBanner">                   
-                    <h1 className="TopName">{profile.Name}</h1>
-                </div>
-
-                <div className="Tagbox">
-                    {tags}
-                </div>
-
-            </div>
-
             <div className="Scroller">
-                {cards}
-                {profile.Gallery ? <GalleryCard images={profile.Gallery}/> : <></>}
+                <div className="Topbar">
+
+                    <img className="TopImage" src={profile.MainImage} style={{boxShadow: `0px 0px 6px ${profile.Color}`}} alt="Profile"/>
+
+                    <div className="TopBanner">                   
+                        <h1 className="TopName">{profile.Name}</h1>
+                    </div>
+
+                    <div className="Tagbox">
+                        {tags}
+                    </div>
+
+                </div>
+
+                <div className="CardBox">
+                    {cards}
+                    {profile.Gallery ? <GalleryCard images={profile.Gallery}/> : <></>}
+                </div>
             </div>
         </>
     );
