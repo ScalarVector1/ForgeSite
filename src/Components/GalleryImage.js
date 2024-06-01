@@ -11,7 +11,17 @@ export default function GalleryImage(props) {
                 className="Image"
                 style={{filter: censored ? "blur(20px)" : ""}} 
                 src={props.src}
-                onClick={() => setCensored(false)}
+                onClick={() => 
+                    {
+                        if (censored)
+                        {
+                            setCensored(false);
+                        }
+                        else 
+                        {
+                            window.open(props.src, '_blank').focus();
+                        }
+                    }}
                 alt="Custom gallery"/>
 
             <div className="Warning"
