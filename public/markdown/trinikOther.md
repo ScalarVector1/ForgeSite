@@ -1,0 +1,2 @@
+## Rank
+Trinik is the legionnaire of her warband, and by effect it's leader. The others report to her but rarely does she pull her rank beyond giving battlefield orders. While her childhood relationships to Sura and Deron partially contribute to this, she also knows that a warband as small and specialized as her own requires a tight knit.

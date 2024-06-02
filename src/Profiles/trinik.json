@@ -16,8 +16,20 @@
 
     "Cards":[
         {
-            "Title": "Under constructions",
-            "Body": "../../markdown/placeholder.md"
+            "Title": "Appearance",
+            "Body": "../../markdown/trinikAppearance.md"
+        },
+        {
+            "Title": "Personality",
+            "Body": "../../markdown/trinikPersonality.md"
+        },
+        {
+            "Title": "History",
+            "Body": "../../markdown/trinikHistory.md"
+        },
+        {
+            "Title": "Other traits",
+            "Body": "../../markdown/trinikOther.md"
         }
     ],
 
